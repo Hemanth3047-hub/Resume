@@ -1,344 +1,174 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemanth Kothapalli - Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #333;
-            order: 1;
-        }
-        .header-content {
-            flex: 1;
-            min-width: 300px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.2em;
-            color: #333;
-        }
-        .contact-info {
-            margin-top: 8px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:visited {
-            color: #007BFF;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .contact-info a {
-            white-space: nowrap;
-        }
-        .section {
-            margin-bottom: 25px;
-        }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        .coursework-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 10px 20px;
-            padding-left: 20px;
-        }
-        .coursework-grid li {
-            list-style-type: none;
-            position: relative;
-            padding-left: 15px;
-        }
-        .coursework-grid li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #333;
-        }
-        .bullet-list {
-            list-style-type: disc;
-            padding-left: 25px;
-            margin: 10px 0;
-        }
-        .bullet-list li {
-            margin-bottom: 8px;
-            line-height: 1.5;
-        }
-        .resumeSubheadingexperience {
-            margin-bottom: 20px;
-        }
-        .resumeSubheadingexperience h3 {
-            margin: 5px 0;
-        }
-        .resumeSubheadingexperience p {
-            margin: 3px 0;
-            color: #666;
-        }
-        .title-date-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 15px;
-            margin-bottom: 5px;
-            flex-wrap: wrap;
-        }
-        .timeline {
-            white-space: nowrap;
-            color: #666;
-            font-size: 0.9em;
-        }
-        .education-item {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .education-details {
-            text-align: right;
-            min-width: 200px;
-        }
-        .education-details p {
-            margin: 3px 0;
-            color: #666;
-        }
-
-        /* Mobile Responsive Adjustments */
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .profile-img {
-                order: 0;
-                margin-bottom: 20px;
-            }
-            .contact-info {
-                justify-content: center;
-            }
-            .coursework-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .education-item {
-                flex-direction: column;
-            }
-            .education-details {
-                text-align: left;
-                margin-top: 10px;
-            }
-            .title-date-container {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 5px;
-            }
-            .timeline {
-                font-size: 0.85em;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
-            h2 {
-                font-size: 1.3em;
-            }
-            h3 {
-                font-size: 1.1em;
-            }
-            .section {
-                margin-bottom: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .coursework-grid {
-                grid-template-columns: 1fr;
-            }
-            body {
-                margin: 15px;
-            }
-            .profile-img {
-                width: 100px;
-                height: 100px;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="header-text">
+                <h1>HEMANTH KOTHAPALLI</h1>
+            </div>
+                <div class="contact-info">
+                    <div class="icon-container">
+                        <a href="tel:+916300165866" class="contact-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="mailto:7hemanthk@gmail.com" class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.linkedin.com/in/hemanthk1/" target="_blank" class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://github.com/Hemanth3047-hub" target="_blank" class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            <div class="profile-image">
+                <img src="your-photo.jpeg" alt="Hemanth Kothapalli">
+            </div>
+        </div>
 
-<div class="header-container">
-    <div class="header-content">
-        <h1>Hemanth Kothapalli</h1>
-        <div class="contact-info">
-            <a href="tel:+916300165866">+91 6300-165866</a>
-            <a href="mailto:7hemanthk@gmail.com">7hemanthk@gmail.com</a>
-            <a href="https://www.linkedin.com/in/hemanthk1/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Hemanth3047-hub" target="_blank">GitHub</a>
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <div class="tab active" onclick="openTab('home')">Home</div>
+            <div class="tab" onclick="openTab('research')">Research & Skills</div>
+            <div class="tab" onclick="openTab('projects')">Projects</div>
+            <div class="tab" onclick="openTab('coursework')">Coursework & Extracurricular</div>
+        </div>
+
+        <!-- Home Tab Content -->
+        <div id="home" class="tab-content">
+            <h2>Education</h2>
+            <div class="experience">
+                
+                <h3>Indian Institute of Technology, Hyderabad</h3>
+                <p class="date-location">Jul. 2019 – May. 2023 | Hyderabad, India</p>
+                <p>Bachelor of Technology in Computer Science & Engineering and Engineering Science, CGPA: 8.59/10</p>
+            </div>
+
+            <h2>Work Experience</h2>
+            <div class="experience">
+                <h3>Engineer (Security/ML) | Qualcomm</h3>
+                <p class="date-location">Jul 2023 – Present</p>
+                <ul>
+                    <li>Implemented real-time incident response and security monitoring for Qualcomm AI Studio using Python and SOAR, reducing false positives by 40%.</li>
+                    <li>Developed automated ML model processing system with role-based access controls, reducing processing time by 60%.</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>Software Intern | Qualcomm</h3>
+                <p class="date-location">May 2022 – Jul 2022</p>
+                <ul>
+                    <li>Developed Xlog Analytics using Django and JavaScript for error log analysis, adopted by AI Software team.</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>Teaching Assistant | IIT Hyderabad</h3>
+                <p class="date-location">Jul 2021 – May 2023</p>
+                <ul>
+                    <li>Assisted in Foundations of ML, DBMS-II, and Data Structures courses.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Research Tab Content -->
+        <div id="research" class="tab-content">
+            <h2>Research Publications and Achievements</h2>
+            <div class="experience">
+                <h3><a href="https://praveenabt.github.io/publications/MUD-Scale.pdf" target="_blank">Scaling IoT MUD Enforcement using Programmable DataPlanes</a></h3>
+                <p class="date-location"> (Jul 2022 – May 2023)</p>
+                <p>Accepted to IEEE/IFIP NOMS'23, Miami, USA</p>
+            </div>
+            <div class="experience">
+                <h3><a href="https://praveenabt.github.io/publications/IoTMUD-FFSPIN.pdf" target="_blank">IoT MUD Enforcement in the Edge Cloud using Programmable Switch</a></h3>
+                <p class="date-location">(Jul 2021 – May 2022)</p>
+                <p>Accepted to ACM SIGCOMM'22 workshop on Security for P4 - FFSPIN, Amsterdam, Netherlands</p>
+            </div>
+            <div class="experience">
+                <h3><a href="https://drive.google.com/file/d/1JlupASg8C9uUNyeFKSC3Lq1g3cQHAbXT/view?usp=sharing" target="_blank">VAK UG Research Excellence Award, 2023 | Network Security Researcher @ IITH</a></h3>
+                <p class="date-location">(Apr 2023)</p>
+                <p>Honored as the sole recipient of the top undergraduate researcher award for the 2023 batch</p>
+            </div>
+
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages & Security Tools:</strong> Python, C/C++, Java, P4, Splunk SOAR, Elasticsearch, Kibana, SDN Controllers</li>
+                <li><strong>Machine Learning:</strong> NumPy, Pandas, Scikit-learn, TensorFlow, Keras, Pattern Recognition, Matplotlib</li>
+                <li><strong>Development & Frameworks:</strong> SQL, JavaScript, Django, Flutter, Git, YAML, CI/CD</li>
+            </ul>
+        </div>
+
+        <!-- Projects Tab Content -->
+        <div id="projects" class="tab-content">
+            <h2>Projects</h2>
+            <div class="experience">
+                <h3><a href="https://github.com/Hemanth3047-hub/Image-Transition" target="_blank">Image Transition</a> | Python, Machine Learning</h3>
+                <ul>
+                    <li>Implemented Variational Autoencoder model for image interpolation between input pairs, demonstrating improved accuracy on public and custom weather datasets.</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3><a href="https://github.com/Hemanth3047-hub/Hand-Gesture-Recognition-using-Convolution-Neural-Network" target="_blank">Hand gesture recognition using CNN's</a> | Python, Machine Learning</h3>
+                <ul>
+                    <li>Built a CNN model and trained it with a dataset developed by capturing hand signs (following ASL convention) through webcam, achieving 99.95% accuracy.</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3><a href="https://github.com/Hemanth3047-hub/PPMS_FULL_STACK" target="_blank">PhD Progress Management System</a> | Flutter, Django</h3>
+                <ul>
+                    <li>Led a team of three in developing an application for PhD scholars of IITH to track their academic progress and send alerts for upcoming deadlines.</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3><a href="https://github.com/Hemanth3047-hub/DBMS-II" target="_blank">Management of Scientific Research Papers Database</a> | PostgreSQL, DBMS</h3>
+                <ul>
+                    <li>Built a relational database from scratch, populated it with information about research publications, and executed complex PostgreSQL queries.</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3><a href="https://github.com/Hemanth3047-hub/Covid-19-SIR-Simulator" target="_blank">Covid-19 SIR Simulator</a> | C++, Data Structures</h3>
+                <ul>
+                    <li>Developed a system to track the number of people suspected, infected, and recovered based on probabilistic thresholds using graphs, adjacency lists, and priority queues.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Coursework & Extracurricular Tab Content -->
+        <div id="coursework" class="tab-content">
+            <h2>Coursework & Extracurricular</h2>
+            <h3>Relevant Coursework</h3>
+            <ul>
+                <li>Computer Networks</li>
+                <li>Foundations of Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>Theory of Computation</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Probability in Computing</li>
+                <li>Reinforcement Learning</li>
+                <li>Operating Systems</li>
+                <li>Database Management Systems</li>
+                <li>Principles of Programming Languages</li>
+            </ul>
+            <h3>Extracurricular Activities</h3>
+            <p>Details on extracurricular activities will be added here.</p>
         </div>
     </div>
-    <img src="your-photo.jpeg" alt="Profile Photo" class="profile-img"> <!-- Replace with your photo path -->
-</div>
-
-<div class="section">
-    <h2>Education</h2>
-    <div class="resumeSubheadingexperience education-item">
-        <div>
-            <h3>Indian Institute of Technology, Hyderabad</h3>
-            <p>Bachelor of Technology in Computer Science & Engineering and Engineering Science, CGPA: 8.59/10</p>
-        </div>
-        <div class="education-details">
-            <p>Jul. 2019 – May. 2023</p>
-            <p>Hyderabad, India</p>
-        </div>
-    </div>
-</div>
-
-<div class="section">
-    <h2>Relevant Coursework</h2>
-    <ul class="coursework-grid">
-        <li>Computer Networks</li>
-        <li>Foundations of Machine Learning</li>
-        <li>Deep Learning</li>
-        <li>Theory of Computation</li>
-        <li>Data Structures and Algorithms</li>
-        <li>Probability in Computing</li>
-        <li>Reinforcement Learning</li>
-        <li>Operating Systems</li>
-        <li>Database Management Systems</li>
-        <li>Principles of Programming Languages</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Research Publications and Achievements</h2>
-    <div class="resumeSubheadingexperience">
-        <div class="title-date-container">
-            <h3><a href="https://praveenabt.github.io/publications/MUD-Scale.pdf" target="_blank">Scaling IoT MUD Enforcement using Programmable DataPlanes</a></h3>
-            <span class="timeline">Jul 2022 – May 2023</span>
-        </div>
-        <p>Accepted to IEEE/IFIP NOMS'23, Miami, USA</p>
-    </div>
-    
-    <div class="resumeSubheadingexperience">
-        <div class="title-date-container">
-            <h3><a href="https://praveenabt.github.io/publications/IoTMUD-FFSPIN.pdf" target="_blank">IoT MUD Enforcement in the Edge Cloud using Programmable Switch</a></h3>
-            <span class="timeline">Jul 2021 – May 2022</span>
-        </div>
-        <p>Accepted to ACM SIGCOMM'22 workshop on Security for P4 - FFSPIN, Amsterdam, Netherlands</p>
-    </div>
-    
-    <div class="resumeSubheadingexperience">
-        <div class="title-date-container">
-            <h3><a href="https://drive.google.com/file/d/1JlupASg8C9uUNyeFKSC3Lq1g3cQHAbXT/view?usp=sharing" target="_blank">VAK UG Research Excellence Award, 2023 | Network Security Researcher @ IITH</a></h3>
-            <span class="timeline">Apr 2023</span>
-        </div>
-        <p>Honored as the sole recipient of the top undergraduate researcher award for the 2023 batch</p>
-    </div>
-</div>
-
-
-<div class="section">
-    <h2>Technical Skills</h2>
-    <ul class="bullet-list">
-        <li><strong>Languages & Security Tools:</strong> Python, C/C++, Java, P4, Splunk SOAR, Elasticsearch, Kibana, SDN Controllers</li>
-        <li><strong>Machine Learning:</strong> NumPy, Pandas, Scikit-learn, TensorFlow, Keras, Pattern Recognition, Matplotlib</li>
-        <li><strong>Development & Frameworks:</strong> SQL, JavaScript, Django, Flutter, Git, YAML, CI/CD</li>
-    </ul>
-</div>
-
-<!-- Work Experience Section -->
-<div class="section">
-    <h2>Work Experience</h2>
-    <div class="resumeSubheadingexperience">
-        <div class="title-date-container">
-            <h3>Engineer (Security/ML) | Qualcomm</h3>
-            <span class="timeline">Jul 2023 – Present</span>
-        </div>
-        <ul class="bullet-list">
-            <li>Implemented real-time incident response and security monitoring for Qualcomm AI Studio using Python and SOAR, reducing false positives by 40%</li>
-            <li>Developed automated ML model processing system with role-based access controls, reducing processing time by 60%</li>
-        </ul>
-    </div>
-    
-    <div class="resumeSubheadingexperience">
-        <div class="title-date-container">
-            <h3>Software Intern | Qualcomm</h3>
-            <span class="timeline">May 2022 – Jul 2022</span>
-        </div>
-        <ul class="bullet-list">
-            <li>Developed Xlog Analytics using Django and JavaScript for error log analysis, adopted by AI Software team</li>
-        </ul>
-    </div>
-    
-    <div class="resumeSubheadingexperience">
-        <div class="title-date-container">
-            <h3>Teaching Assistant | IIT Hyderabad</h3>
-            <span class="timeline">Jul 2021 – May 2023</span>
-        </div>
-        <ul class="bullet-list">
-            <li>Assisted in Foundations of ML, DBMS-II, and Data Structures courses</li>
-        </ul>
-    </div>
-</div>
-
-
-<div class="section">
-    <h2>Projects</h2>
-    <div class="resumeSubheadingexperience">
-        <h3><a href="https://github.com/Hemanth3047-hub/Image-Transition" target="_blank">Image Transition</a> | Python, Machine Learning</h3>
-        <ul class="bullet-list">
-            <li>Implemented Variational Autoencoder model for image interpolation between input pairs, demonstrating improved accuracy on public and custom weather datasets.</li>
-        </ul>
-    </div>
-    <div class="resumeSubheadingexperience">
-        <h3><a href="https://github.com/Hemanth3047-hub/Hand-Gesture-Recognition-using-Convolution-Neural-Network" target="_blank">Hand gesture recognition using CNN's</a> | Python, Machine Learning</h3>
-        <ul class="bullet-list">
-            <li>Built a CNN model and trained it with a dataset developed by capturing hand signs (following ASL convention) through webcam, binarizing, segmenting, and resizing them to 64x64 pixels and achieved an accuracy of 99.95%.</li>
-        </ul>
-    </div>
-    <div class="resumeSubheadingexperience">
-        <h3><a href="https://github.com/Hemanth3047-hub/PPMS_FULL_STACK" target="_blank">PhD Progress Management System</a> | Flutter, Django</h3>
-        <ul class="bullet-list">
-            <li>Led a team of three in developing an application for PhD scholars of IITH to track their academic progress and to send alerts when they are nearing to an event deadlines right from their admission to their final thesis submission.</li>
-        </ul>
-    </div>
-    <div class="resumeSubheadingexperience">
-        <h3><a href="https://github.com/Hemanth3047-hub/DBMS-II" target="_blank">Management of Scientific Research Papers Database</a> | PostgreSQL, DBMS</h3>
-        <ul class="bullet-list">
-            <li>Built a relational database from scratch, populated it with information about research publications and executed multiple challenging PostgreSQL queries as part of DBMS projectwork.</li>
-        </ul>
-    </div>
-    <div class="resumeSubheadingexperience">
-        <h3><a href="https://github.com/Hemanth3047-hub/Covid-19-SIR-Simulator" target="_blank">Covid-19 SIR Simulator</a> | C++, Data Structures</h3>
-        <ul class="bullet-list">
-            <li>Developed a system to track the number of people suspected, infected, and recovered based on probabilistic thresholds for each phase, promoting individuals to the next phase when required probabilities are met. Utilized graphs, adjacency lists, and priority queues for implementation.</li>
-        </ul>
-    </div>
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>
